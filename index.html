@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LinkedIn Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-light fixed-top "> <!-- Navbar Start-->
+        <div class="container-fluid">
+          <img style="height: 40px;" class="img-thumbnail" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary ms-2 mt-0 " type="submit">Search</button>
+          </form>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto me-5 "> <!--Nav Elements Start-->
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#">
+                    <div class="ıcons" ><i class="fa-solid fa-house"></i></div>
+                    <div class="menutext">
+                        Ana Sayfa
+                    </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                   <div class="ıcons" ><i class="fa-solid fa-user-group"></i></div>
+                    <div class="menutext">
+                        Ağım
+                    </div>
+                </a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                   <div class="ıcons" ><i class="fa-solid fa-briefcase"></i></div>
+                    <div class="menutext">
+                        İş İlanları
+                    </div>
+                </a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                   <div class="ıcons" ><i class="fa-solid fa-comment-dots"></i></div>
+                    <div class="menutext">
+                        Mesajlaşma
+                    </div>
+                </a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                   <div class="ıcons" ><i class="fa-solid fa-bell"></i></div> 
+                    <div class="menutext">
+                        Bildirimler
+                    </div>
+                </a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                   <div class="ıcons" > <img style="height: 25px; width: 25px; border-radius: 50%;" src="https://iasbh.tmgrup.com.tr/bf9385/1200/627/57/0/700/336?u=https://isbh.tmgrup.com.tr/sbh/2020/09/24/imam-gazali-kimdir-imam-gazalinin-eserleri-1600950300525.jpeg" alt="ben">
+                   </div>
+                    <div class="menutext">
+                        Ben
+                    </div>
+                </a>
+              </li>                        
+              <div id="vertical"></div>
+              <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto "> 
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                   <div class="ıcons" > <i class="fa-solid fa-bars"></i></div>
+                    <div class="menutext">
+                        İş
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                   <div class="ıcons" > <i class="fa-solid fa-chalkboard"></i></div>
+                    <div class="menutext">
+                        İş İlanı Yayınla
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            
+            </ul> <!--Nav Elements End-->
+          </div>
+        </div>
+    </nav> <!-- Navbar End-->
+    <div class="container profile  d-flex flex-column col-sm-3 float-start ms-5"> <!-- Left Side Start-->
+        <div class="row d-flex flex-column ">
+            <div class="card" style="width: 18rem;"> <!-- profile card start -->
+                <img src="https://picsum.photos/id/10/200/50" class="card-img-top" alt="ppbg">
+                    <div class="card-body">
+                        <img class="img-thumbnail" style="height: 70px; width: 70px; border-radius: 50%; justify-content: center; margin-left: 70px; margin-top: -40px; " src="https://iasbh.tmgrup.com.tr/bf9385/1200/627/57/0/700/336?u=https://isbh.tmgrup.com.tr/sbh/2020/09/24/imam-gazali-kimdir-imam-gazalinin-eserleri-1600950300525.jpeg" alt="pp">
+                        <h5 class="card-title">Yusuf Emre Baltacı</h5>
+                            <p class="card-text">
+                                Junior Web Developer at Freelance. Since 2021
+                            </p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <span class="card-text">Profilinizi Kimler Görüntüledi 
+                                <span style="color: blue;" >447</span> 
+
+                            </span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="card-text">Yayınınız İçin Görüntüleme
+                                <span style="color: blue;" >150</span>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="card-body d-flex">
+                        <div class=" me-2 " > <i class="fa-solid fa-bookmark"></i></div>
+                        <a class="text-decoration-none text-secondary" href="#">
+                            <b> Ögelerim</b></a>
+                    </div>
+            </div> <!-- profile card end -->
+                <div class="card mt-3 " style="width: 18rem;"> <!--Pages Start-->
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Sayfalarım
+                        </h5>
+                        <h6 class="card-subtitle mb-2 d-flex ">
+                            <img style="width: 30px; height: 30px; " src="https://media-exp1.licdn.com/dms/image/C4E0BAQGl9HYLHdcl6g/company-logo_200_200/0/1610108537301?e=2147483647&v=beta&t=eAtPJmShgmNJSIqKD1AX_XxqmUzVwBstjNx7YbycGPQ" alt="kablosuzbeyin">
+                            <p class="ms-3" > <b>Kablosuz Beyin</b> </p>
+                        </h6>
+                        <p style="color: black; ">
+                            Sayfa Bildirimleri <span class=" ms-3 " style="color:blue" >10</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card mt-3" style="width: 18rem;"> <!--Hastags Start-->
+                    <ul class="list-group list-group-flush ">
+                      <li class="list-group-item">
+                        <strong>En Yeni</strong>
+                      </li>
+                      <li class="list-group-item text-muted"> 
+                        #Kodluyoruz
+                      </li>
+                      <li class="list-group-item text-muted"> 
+                        #front-end
+                      </li>                      
+                      <li class="list-group-item text-muted"> 
+                        #html
+                      </li>                      
+                      <li class="list-group-item text-muted"> 
+                        #css
+                      </li>                      
+                      <li class="list-group-item text-muted"> 
+                        #bootstrap
+                      </li>                      
+                      <li class="list-group-item"> 
+                        <a style="text-decoration: none;" href="#">
+                            <span style="color: blue;" >Gruplar</span> <br> 
+                            <span style="color: blue;" >Etkinlikler</span> <br>
+                        </a>
+                      </li>                      
+                        <li class="list-group-item" >
+                            <a href="#" style="text-decoration: none; color: blue;" >Takip Edilen Kategoriler</a> 
+                          </li>
+                          <li class="list-group-item text-muted"> 
+                            #Kodluyoruz
+                          </li>
+                          <li class="list-group-item text-muted"> 
+                            #front-end
+                          </li>
+                    </ul>            
+                    </div> <!-- Hastags End -->
+                  </div>
+            
+    </div><!-- Left Side End -->
+    <div class="main d-inline"> <!-- Main start -->
+        <div class="row">
+            <div class="col-sm-6 ms-4" >
+                <div class="gonderi profile bg-light "> <!-- Add content start -->
+                    <div class="new-element">
+                        <input type="text" class="comment-line" placeholder="Bir gönderi başlat" style="padding: 5px 10px;" />
+                        </div>
+                        <div class="gonderi-list text-decoration-none">
+                            <ul class=" list-elements text-muted pb-4 text-decoration-none ">
+                                <li>
+                                    <i class="fa-regular fa-image"></i>
+                                    <span>Fotoğraf</span> 
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-youtube"></i>
+                                    <span>Video</span>  
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    <span>Etkinlik</span>  
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-newspaper"></i>
+                                    <span>Yazı yaz</span>  
+                                </li>
+                            </ul>
+                        </div>
+                </div> <!-- Add Content End -->
+                <div><hr/></div>
+                <div class="content"> <!-- Contents Start-->
+                    <div class="content-header"> <!-- 1. Card Header-->
+                        <img style="width:50px; height: 50px; border-radius: 50%; " src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg" alt="elonpp">
+                        <span> <strong>Elon Musk</strong> </span>
+                        <div class="d-flex flex-column text-muted yazi" style="font-size: 13px;" >
+                            <span>I teach CS50 <br>
+                            25a</span>
+                        </div>
+                        
+                            <div class="col"> 
+                                <p class="text-black ms-2 ">They have done great things!</p>
+                                <div class="card h-100">
+                                    <img src="https://cdnuploads.aa.com.tr/uploads/Contents/2020/05/30/thumbs_b_c_085eafd63732e171b57a902b07c8097b.jpg" class="card-img-top" alt="elon-post">
+                                    <div class=" d-flex text-decoration-none"> <!-- Card Main -->
+                                        <ul class="d-flex">
+                                            <li style="padding-right: 10px;" >
+                                                <i class="fa-regular fa-thumbs-up"></i>
+                                            </li>
+                                            <li style="padding-right: 10px;" >
+                                                <i class="fa-solid fa-hands-clapping"></i>
+                                            </li>
+                                            <li style="padding-right: 10px;" >
+                                                <i class="fa-solid fa-heart"></i>
+                                            </li>
+                                            <li style="padding-right: 10px;" >
+                                                <span>934</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                  <div class="card-footer text-decoration-none "> <!-- Card Footer-->
+                                    <ul class="d-flex text-decoration-none " >
+                                        <li style="padding-right: 18px;">
+                                            <i class="fa-regular fa-thumbs-up"></i>
+                                            <span>Beğen</span>
+                                        </li>
+                                        <li style="padding-right: 18px;">
+                                            <i class="fa-regular fa-comment"></i>
+                                            <span>Yorum yap</span>
+                                        </li>
+                                        <li style="padding-right: 18px;">
+                                            <i class="fa-solid fa-share"></i>
+                                            <span>Paylaş</span>
+                                        </li>
+                                        <li style="padding-right: 18px;">
+                                            <i class="fa-regular fa-paper-plane"></i>
+                                            <span>Gönder</span>
+                                        </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="content-main"></div>
+                    <div class="content-footer"></div>
+                    <div class="content-header mt-5 "> <!-- 2. Card Header-->
+                        <img style="width:50px; height: 50px; border-radius: 50%; " src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg" alt="elonpp">
+                        <span> <strong>Elon Musk</strong> </span>
+                        <div class="d-flex flex-column text-muted yazi" style="font-size: 13px;" >
+                            <span>I teach CS50 <br>
+                            25a</span>
+                        </div>
+                        
+                            <div class="col"> 
+                                <p class="text-black ms-2 ">They have done great things!</p>
+                                <div class="card h-100">
+                                    <img src="https://cdnuploads.aa.com.tr/uploads/Contents/2020/05/30/thumbs_b_c_085eafd63732e171b57a902b07c8097b.jpg" class="card-img-top" alt="elon-post">
+                                    <div class=" d-flex text-decoration-none"> <!-- Card Main -->
+                                        <ul class="d-flex">
+                                            <li style="padding-right: 10px;" >
+                                                <i class="fa-regular fa-thumbs-up"></i>
+                                            </li>
+                                            <li style="padding-right: 10px;" >
+                                                <i class="fa-solid fa-hands-clapping"></i>
+                                            </li>
+                                            <li style="padding-right: 10px;" >
+                                                <i class="fa-solid fa-heart"></i>
+                                            </li>
+                                            <li style="padding-right: 10px;" >
+                                                <span>934</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                  <div class="card-footer text-decoration-none "> <!-- Card Footer-->
+                                    <ul class="d-flex text-decoration-none " >
+                                        <li style="padding-right: 18px;">
+                                            <i class="fa-regular fa-thumbs-up"></i>
+                                            <span>Beğen</span>
+                                        </li>
+                                        <li style="padding-right: 18px;">
+                                            <i class="fa-regular fa-comment"></i>
+                                            <span>Yorum yap</span>
+                                        </li>
+                                        <li style="padding-right: 18px;">
+                                            <i class="fa-solid fa-share"></i>
+                                            <span>Paylaş</span>
+                                        </li>
+                                        <li style="padding-right: 18px;">
+                                            <i class="fa-regular fa-paper-plane"></i>
+                                            <span>Gönder</span>
+                                        </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="content-main"></div>
+                    <div class="content-footer"></div>
+                </div> <!-- Contents End-->
+            </div>
+            <div class="col-sm-3 profile ms-5"> <!-- left side Start -->
+                <div class="d-flex justify-content-between bg-light list "> <!-- flow start -->
+                    <h6>Akışınıza Ekleyin</h6>
+                <i class="fa-solid fa-circle-info text-muted " ></i>
+                </div> <!-- flow End-->
+                <div class="d-flex flex-column bg-light list" > <!-- recommended start -->
+                    <div class="codecraft d-flex">
+                          <img style="width: 55px; height: 55px; border-radius: 50%; " src="https://miro.medium.com/max/1000/1*6pwH-XyxDKOpVFhE8SB00g.png" alt="codecraft">
+                            <span style="padding-left: 25px; margin-top: 15px; " > 
+                                <strong>Codecraft</strong> 
+                            </span>
+                                <button type="button" class="btn btn-outline-primary"> 
+                                    <strong>Takip Et</strong> 
+                                </button>
+                    </div>
+                    <div class="codecraft d-flex">
+                        <img style="width: 55px; height: 55px; border-radius: 50%; " src="data:image/png;base64,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" alt="podfresh">
+                          <span style="padding-left: 25px; margin-top: 15px; " > 
+                              <strong>PodFresh</strong> 
+                          </span>
+                              <button type="button" class="btn btn-outline-primary"> 
+                                  <strong>Takip Et</strong> 
+                              </button>
+                  </div>
+                  <div class="codecraft d-flex">
+                    <img style="width: 55px; height: 55px; border-radius: 50%; " src="https://media.licdn.cn/dms/image/C4D0BAQGKi25Vo-YjDA/company-logo_200_200/0/1634553374919?e=2159024400&v=beta&t=bmMIiwiPqM_PslHPGQRE4cbGn0PQfR41tl0gOCEZKKo" alt="navlungo">
+                      <span style="padding-left: 25px; margin-top: 15px; " > 
+                          <strong>Navlungo</strong> 
+                      </span>
+                          <button type="button" class="btn btn-outline-primary"> 
+                              <strong>Takip Et</strong> 
+                          </button>
+              </div>
+
+                </div> <!-- recommended end -->
+                <div class="other-bar d-flex mt-5 bg-light list "> <!-- flow 2 header-->
+                    <h6 class=" me-5 " > <small>Bugünün En Çok İzlenen Eğitimleri </small> </h6>
+                <i class="fa-solid fa-circle-info text-muted " ></i>
+                </div>
+                <div class="list bg-light mt-0 "> <!-- flow 2 start -->
+                    <ol>
+                        <li style="font-size: 13px;">
+                             <strong> <small>The Six Morning Habits of High Perf...</small> </strong> <br>
+                            <span style=" font-size: 13px; color: #5f5f5f;" > <small>Pete Mocakatais | How to be awesome at you...</small> </span>
+                        </li>
+                        <li style="font-size: 13px;">
+                            <strong> <small>Onconscious Blas</small> </strong> <br>
+                           <span style=" font-size: 13px; color: #5f5f5f;" > <small>Stacey Gordon</small> </span>
+                       </li><li style="font-size: 13px;">
+                        <strong> <small>Critical Thinking for Better Judgme...</small> </strong> <br>
+                       <span style=" font-size: 13px; color: #5f5f5f;" > <small>  Becki Saltzman</small> </span>
+                   </li>
+                    </ol>
+                    <a style="text-decoration: none; font-size: 15px; " href="#">
+                        <strong> <small>Linkedin Learning'de daha fazlasını göster</small> </strong>
+                    </a>
+                </div> <!-- flow 2 end -->
+                <div class="text-center mt-3 ml-3 list d-flex flex-xxl-wrap justify-content-around "> <!-- Footer Start -->
+                    <div
+                      ><a href="https://about.linkedin.com/" class="link mr-3"
+                        >Hakkında</a
+                      ></div
+                    >
+                    <div
+                      ><a
+                        href="https://www.linkedin.com/accessibility?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BT6H7rzDzR%2FSQEvO%2BuBKdSw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-compactfooter.accessibility"
+                        class="link mr-3"
+                        >Erişilebilirlik</a
+                      ></div
+                    >
+                    <div
+                      ><a
+                        href="https://www.linkedin.com/help/linkedin?trk=footer_d_flagship3_feed&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BT6H7rzDzR%2FSQEvO%2BuBKdSw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-compactfooter.help"
+                        class="link"
+                        >Yardım Merkezi</a
+                      ></div
+                    >
+                    <div><a href="" class="link mr-3">Gizlilik ve Koşullar</a></div>
+                    <div
+                      ><a
+                        href="https://www.linkedin.com/help/linkedin/answer/62931?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BT6H7rzDzR%2FSQEvO%2BuBKdSw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-compactfooter.ad_choices"
+                        class="link"
+                        >Reklam Tercihleri</a
+                      ></div
+                    >
+                    <div
+                      ><a
+                        href="https://www.linkedin.com/ad/start?trk=n_nav_ads_rr&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BT6H7rzDzR%2FSQEvO%2BuBKdSw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_feed-compactfooter.advertising"
+                        class="link"
+                        >Reklam</a
+                      ></div
+                    >
+                    <div class="text-center" style="margin-top: 10px">
+                      <img
+                        src="https://www.logo.wine/a/logo/LinkedIn/LinkedIn-Logo.wine.svg"
+                        width="90px"
+                        height="20px"
+                      /><span style="font-size: 12px; margin-left: -15px"
+                        >Linkedin Corporation © 2021</span
+                      >
+                    </div>
+                  </div> <!-- Footer End -->
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div><!-- Main End -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
